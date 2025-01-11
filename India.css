@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* General page styling */
+
+
+body {
+    font-family: poppins, sans-serif;
+    background-color: lightgray;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --primary-color: #00a896;
+  --primary-color-dark: #40B5AD;
+  --text-dark: #333333;
+  --text-light: #767268;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "poppins", sans-serif;
+}
+
+
+/* Navigation Bar */
+.nav_wrapper {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Space between the logo and buttons */
+  max-width: var(--max-width); /* Restricts width of the nav bar */
+ /* Centers nav content */
+  padding: 0 2rem; /* Inner spacing for the nav bar */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem; /* Adjust height for nav */
+  background-color: darkcyan; /* Black background */
+  z-index: 1000; /* Ensure it stays on top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This will push logo to the left and buttons to the right */
+  box-sizing: border-box; /* Makes sure padding doesn't push elements out */
+}
+
+.nav_logo {
+  display: flex;
+  justify-content: flex-start; /* Align the logo to the left */
+  align-items: center; /* Vertically center the logo */
+}
+
+.nav_logo a {
+  color: white; /* Set the logo color to white */
+  text-decoration: none; /* Optional: Removes underline */
+  font-size: 1.75rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Optional: Make the logo text bold */
+}
+
+.nav_logo a span {
+  color: #333; /* If you want to keep a different color for the span */
+}
+
+.nav_btn {
+  display: flex; 
+  justify-content: flex-end; /* Align the buttons to the right */
+  align-items: center; /* Vertically center the buttons */
+  gap: 1rem;
+  flex-shrink: 0; /* Prevent the buttons from shrinking */
+}
+
+.nav_btn button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav_btn .sign_up {
+  background-color: darkcyan;
+  color: white;
+}
+
+.nav_btn .sign_up:hover {
+  background-color: white;
+}
+
+.nav_btn .sign_in {
+  background-color: white;
+  color: var(--text-dark);
+}
+
+.nav_btn .sign_in:hover {
+  background-color: darkcyan;
+  color: white;
+}
+
+
+/* Banner Section */
+/* Reset body margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+/* Banner Section */
+.banner {
+  position: relative;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* 50% of the viewport height */
+  overflow: hidden;
+  background-color: #000; /* Fallback color */
+  margin: 0; /* Ensure no margin around the banner */
+  padding: 0; /* Ensure no padding inside the banner */
+}
+
+.banner-image {
+  width: 100vw; /* Full width of the viewport */
+  height: 100%; /* Full height of the banner */
+  object-fit: cover; /* Keep aspect ratio, crop if necessary */
+}
+
+.banner-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make it span the full width of the banner */
+  height: 100%; /* Make it span the full height of the banner */
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  display: flex; /* Center content */
+  align-items: center;
+  justify-content: center;
+}
+
+
+.banner-text h1 {
+  font-size: 7rem;
+  margin: 0;
+  background: linear-gradient(to left, darkcyan, floralwhite, lightcoral, lightcyan); /* Define the gradient */
+  -webkit-background-clip: text; /* Apply the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Make the background visible */
+  transition: background-position 0.5s ease; /* Smooth transition effect */
+  background-size: 200%; /* Extend the background size for the animation */
+  background-position: left; /* Start the gradient from the left */
+  letter-spacing: 10px;
+  font-family:"Bebas Neue";
+}
+
+.banner-text h1:hover {
+  background-position: right; /* Animate the gradient to the right on hover */
+}
+
+
+
+
+
+.description {
+    padding: 20px;
+    max-width: 1300px; /* Set a maximum width for the paragraph */
+    margin: 0 auto; /* Center the paragraph horizontally */
+    text-align: justify; /* Optional: Center-align the text */
+    align-items: justify;
+    margin-top: 20px;
+    color: black;
+
+}
+
+/* Container for all cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin: 50px;
+    margin-top: 10px;
+}
+
+/* Individual destination card */
+.destination-card {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 250px;
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+    margin: 30px;
+}
+
+.destination-card:hover {
+   box-shadow: 0 0 15px rgba(0, 128, 128, 0.6); 
+}
+
+/* Card image */
+.destination-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Card information section */
+.card-info {
+    padding: 15px;
+}
+
+.card-info h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: var(--primary-color);
+}
+
+.card-info p {
+    font-size: 14px;
+    color: lightgray;
+    margin: 5px 0;
+
+}
+
+.view-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #40B5AD;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.view-more-btn:hover {
+    background-color: black;
+    outline: 20px cyan;
+    border-radius: 30px;
+}

@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* General Page Styling */
+body {
+    font-family: Poppins, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    text-align: center;
+}
+
+
+.nav_wrapper {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Space between the logo and buttons */
+  max-width: var(--max-width); /* Restricts width of the nav bar */
+ /* Centers nav content */
+  padding: 0 2rem; /* Inner spacing for the nav bar */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem; /* Adjust height for nav */
+  background-color: darkcyan; /* Black background */
+  z-index: 1000; /* Ensure it stays on top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This will push logo to the left and buttons to the right */
+  box-sizing: border-box; /* Makes sure padding doesn't push elements out */
+}
+
+.nav_logo {
+  display: flex;
+  justify-content: flex-start; /* Align the logo to the left */
+  align-items: center; /* Vertically center the logo */
+}
+
+.nav_logo a {
+  color: white; /* Set the logo color to white */
+  text-decoration: none; /* Optional: Removes underline */
+  font-size: 1.75rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Optional: Make the logo text bold */
+}
+
+.nav_logo a span {
+  color: #333; /* If you want to keep a different color for the span */
+}
+
+.nav_btn {
+  display: flex; 
+  justify-content: flex-end; /* Align the buttons to the right */
+  align-items: center; /* Vertically center the buttons */
+  gap: 1rem;
+  flex-shrink: 0; /* Prevent the buttons from shrinking */
+}
+
+.nav_btn button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav_btn .sign_up {
+  background-color: var(--primary-color-dark);
+  color: var(--text-light);
+}
+
+.nav_btn .sign_up:hover {
+  background-color: white;
+}
+
+.nav_btn .sign_in {
+  background-color: white;
+  color: var(--text-dark);
+}
+
+.nav_btn .sign_in:hover {
+  background-color: var(--primary-color-dark);
+  color: white;
+}
+
+
+/* Banner Section Styling */
+
+.banner {
+  margin-top: 4rem; /* Same as the nav height */
+ /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  height: 350px; /* Adjust as needed */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Section Styling */
+.section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #40B5AD;
+    text-align: center;
+}
+
+.section p, .section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: ghostwhite;
+}
+
+.section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Book Tour Button Styling */
+.book-tour {
+    text-align: center;
+    margin: 30px;
+}
+
+.book-tour-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: darkcyan;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.book-tour-button:hover {
+    background-color: #333;
+    outline: lightcyan;
+    outline-width: 10px;
+
+}
