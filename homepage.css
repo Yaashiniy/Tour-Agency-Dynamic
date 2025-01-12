@@ -278,7 +278,6 @@ nav {
   }
 }
 
-/* General container for consistent width */
 .container {
     max-width: var(--max-width); 
     margin: 0 auto; /* Center content */
@@ -291,9 +290,8 @@ nav {
 
 /* About Us Section */
 
-/* General container for consistent width */
 .container {
-    max-width: var(--max-width); /* Ensure --max-width is set to 1200px */
+    max-width: var(--max-width);
     margin: 0 auto; /* Center content */
     padding: 0 20px; /* Add padding for spacing on smaller screens */
 }
@@ -313,8 +311,8 @@ nav {
 
 .about-image img {
     width: 100%;
-    max-width: 380px; /* Adjust image size */
-    border-radius: none; /* Round shape */
+    max-width: 380px; 
+    border-radius: none; 
     border: solid black;
 }
 
@@ -328,7 +326,7 @@ nav {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: var(--white); 
-    font-family: var(--header-font); /* Bebas Neue font */
+    font-family: var(--header-font); 
     letter-spacing: 0.45em;
 }
 
@@ -344,7 +342,7 @@ nav {
     display: inline-block;
     padding: 10px 20px;
     background-color: black; 
-    color: var(--primary-color); /* White text color */
+    color: var(--primary-color); 
     border-radius: 50px;
     border-color: cyan;
     text-decoration: none;
