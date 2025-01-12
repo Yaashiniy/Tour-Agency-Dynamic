@@ -30,7 +30,7 @@ nav {
   padding: 0 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* This will push logo to the left and buttons to the right */
+  justify-content: space-between; 
   box-sizing: border-box; /* Makes sure padding doesn't push elements out */
 }
 
