@@ -1,10 +1,8 @@
 <?php
-// Assuming you're already connected to your database
 include 'db_connection.php';
 
 
 <?php
-// Assuming you've already connected to your database here
 
 // Handle form submission for booking
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
